@@ -99,3 +99,26 @@ ul li span {
 ul li span:hover {
   background: #edeef0;
 }
+
+/*code added to make the complete website responsive to different screen sizes  */
+@media screen and (max-width: 768px) {
+  .todo {
+    margin: 50px auto 20px;
+    padding: 30px;
+  }
+  .row {
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+  .row input {
+    padding: 8px;
+  }
+  .row button {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+  ul li {
+    font-size: 16px;
+  }
+}
+
