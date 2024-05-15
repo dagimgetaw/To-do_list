@@ -7,6 +7,8 @@
   box-sizing: border-box;
 }
 .container {
+/*   since the to do list box overflow items when more items are added this code will remove the overflowing issue */
+  overflow: auto;
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(135deg, #153677, #4e085f);
@@ -99,3 +101,26 @@ ul li span {
 ul li span:hover {
   background: #edeef0;
 }
+
+/*code added to make the complete website responsive to different screen sizes  */
+@media screen and (max-width: 768px) {
+  .todo {
+    margin: 50px auto 20px;
+    padding: 30px;
+  }
+  .row {
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+  .row input {
+    padding: 8px;
+  }
+  .row button {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+  ul li {
+    font-size: 16px;
+  }
+}
+
