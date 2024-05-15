@@ -7,6 +7,8 @@
   box-sizing: border-box;
 }
 .container {
+/*   since the to do list box overflow items when more items are added this code will remove the overflowing issue */
+  overflow: auto;
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(135deg, #153677, #4e085f);
